@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Anna Zerova](https://up.htmlacademy.ru/adaptive/19/user/1019657).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Полозова](https://htmlacademy.ru/profile/id258631).
 
 ---
 
