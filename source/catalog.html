@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="#">Главная</a></li>
-          <li class="site-list__item site-list__item-active">Каталог продукции</li>
+          <li class="site-list__item site-list__item-active"><a>Каталог продукции</a></li>
           <li class="site-list__item"><a href="#">Подбор программы</a></li>
         </ul>
       </div>
@@ -119,10 +120,50 @@
       </div>
     </article>
 
+    <article class="catalog-extra">
+      <h2 class="visually-hidden">Дополнительные товары</h2>
+
+      <h1 class="catalog-extra__header">Дополнительные товары</h1>
+      <div class="catalog-extra__item ">
+        <p class="catalog-extra__item  catalog-extra__item--name">Сахарозаменитель</p>
+        <span class="catalog-extra__item catalog-extra__item--about">1 упаковка (100 г)</span>
+        <span class="catalog-extra__item catalog-extra__item--price">100 р.</span>
+        <a class="order" href="#">Заказать</a>
+      </div>
+      <div class="catalog-extra__item ">
+        <p class="catalog-extra__item  catalog-extra__item--name">Питьевая вода</p>
+        <span class="catalog-extra__item catalog-extra__item--about">5 литров</span>
+        <span class="catalog-extra__item catalog-extra__item--price">50 р.</span>
+        <a class="order" href="#">Заказать</a>
+      </div>
+      <div class="catalog-extra__item ">
+        <p class="catalog-extra__item  catalog-extra__item--name">Молоко</p>
+        <span class="catalog-extra__item catalog-extra__item--about">1 литр)</span>
+        <span class="catalog-extra__item catalog-extra__item--price">100 р.</span>
+        <a class="order" href="#">Заказать</a>
+      </div>
+      <div class="catalog-extra__item ">
+        <p class="catalog-extra__item  catalog-extra__item--name">Витамины</p>
+        <span class="catalog-extra__item catalog-extra__item--about">1 упаковка (30 г)</span>
+        <span class="catalog-extra__item catalog-extra__item--price">300 р.</span>
+        <a class="order" href="#">Заказать</a>
+      </div>
+    </article>
+    <img class="order-pic" src="https://via.placeholder.com/150x150" alt="Подарок">
+
   </main>
 
   <footer class="page-footer">
     <div class="page-footet__wrapper">
+      <section class="page-footer__partnership">
+        <h2 class="visually-hidden">Сотрудничество</h2>
+        <h1 class="page-footer__partnership page-footer__partnership--main">Приглашаем к сотрудничеству дилеров!</h1>
+        <p class="page-footer__partnership page-footer__partnership--text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+
+        <!--Потом будет карта-->
+        <img class="map" src="https://via.placeholder.com/150x150" alt="Карта">
+      </section>
+
       <img class="page-footer__logo--footer" src="https://via.placeholder.com/150x150" alt="Логотип">
       <div class="page-footer__social">
         <ul class="social__list">
