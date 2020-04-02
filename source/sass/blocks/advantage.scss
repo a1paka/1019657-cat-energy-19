@@ -17,7 +17,7 @@
     height: 60px;
     width: 60px;
     background-image: url("../img/advantage-leaf@1x.png");
-    background-color: #68b738;
+    background-color: $advantage_bg_color;
     background-repeat: no-repeat;
   }
 
@@ -25,7 +25,7 @@
     height: 60px;
     width: 60px;
     background-image: url("../img/advantage-powder@1x.png");
-    background-color: #68b738;
+    background-color: $advantage_bg_color;
     background-repeat: no-repeat;
   }
 
@@ -33,7 +33,7 @@
     height: 60px;
     width: 60px;
     background-image: url("../img/advantage-dining@1x.png");
-    background-color: #68b738;
+    background-color: $advantage_bg_color;
     background-repeat: no-repeat;
   }
 
@@ -41,7 +41,7 @@
     height: 60px;
     width: 60px;
     background-image: url("../img/advantage-clock@1x.png");
-    background-color: #68b738;
+    background-color: $advantage_bg_color;
     background-repeat: no-repeat;
   }
 }

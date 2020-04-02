@@ -1,5 +1,3 @@
-$text-color: white;
-
 .page-main {
   &__wrapper {
     background-image: url("../img/index-background-mobile@1x.jpg");
@@ -8,7 +6,7 @@ $text-color: white;
 
   &__wrapper-title {
     padding-top: 30px;
-    color: $text-color;
+    color: $main_text_color;
     font-size: 36px;
     font-weight: bold;
     text-align: center;
@@ -17,7 +15,7 @@ $text-color: white;
 
   &__wrapper-text {
     text-transform: uppercase;
-    color: $text-color;
+    color: $main_text_color;
     text-align: center;
     font-size: 14px;
     background: none;
