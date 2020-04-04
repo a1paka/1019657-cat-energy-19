@@ -1,15 +1,13 @@
-.advantage {
-  &__title {
-    text-align: center;
-    font-size: 36px;
-    line-height: 60px;
-  }
+.advantage__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 60px;
+}
 
-  &__list {
-    font-family: "Arial", "Helvetica", sans-serif;
-    font-size: 14px;
-    list-style: none;
-  }
+.advantage__list {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  list-style: none;
 }
 
 .advantage__image {

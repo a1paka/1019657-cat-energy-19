@@ -1,19 +1,16 @@
-.page-main {
-  &__wrapper {
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-  }
+.page-main__wrapper {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
 
-  &__wrapper-title {
+  .page-main__wrapper-title {
     padding-top: 30px;
     color: $main_text_color;
     font-size: 36px;
-    font-weight: bold;
     text-align: center;
     line-height: 36px;
   }
 
-  &__wrapper-text {
+  .page-main__wrapper-text {
     text-transform: uppercase;
     color: $main_text_color;
     text-align: center;

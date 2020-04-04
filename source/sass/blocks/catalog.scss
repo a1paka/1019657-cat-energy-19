@@ -6,7 +6,6 @@
   p {
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 600;
     line-height: 20px;
   }
 
@@ -16,27 +15,28 @@
   }
 }
 
-.catalog-more {
-  &__show {
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 600px;
-    text-align: center;
-  }
+.catalog-more__img {
+  text-align: center;
+  margin-top: 50px;
+}
 
-  &__text {
-    font-family: "Arial", "Helvetica", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-  }
+.catalog-more__show {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.catalog-more__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
 }
 
 .order {
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 600;
   line-height: 20px;
   text-decoration: none;
 }

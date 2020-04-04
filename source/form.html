@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:200&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -26,11 +25,11 @@
 
   <main class="page-main">
 
-    <div class="page-main__wrapper">
+    <div class="page-main__profile-wrapper">
 
       <div class="profile-pet">
         <h1>Подбор программы</h1>
-        <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="profile-pet__fill-form">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="profile-pet__form" action="https://echo.htmlacademy.ru" method="POST">
           <label for="pet-name">Имя:*
             <input id="pet-name" type="text" placeholder="Барсик" required>
@@ -45,7 +44,7 @@
       </div>
 
       <div class="programs-checkboxes">
-        <ul>
+        <ul class="programs-checkboxes__select">
           <li>
             <input type="radio" name="programs-checkboxes__loose" checked>Похудение</li>
           <li>
@@ -56,8 +55,7 @@
       </div>
 
       <div class="profile-owner">
-        <h1>Контактные данные (владельца кота)</h1>
-        <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <h1 class="profile-owner__contacts">Контактные данные (владельца кота)</h1>
         <form class="profile-owner__form" action="https://echo.htmlacademy.ru" method="POST">
           <label for="profile-owner__email" required>E-mail:*
             <input id="profile-owner__email" type="email" placeholder="Kuklachev@gmail.com">
@@ -69,22 +67,22 @@
       </div>
 
       <div class="comments-form">
-        <h1>Комментарии</h1>
+        <h1 class="comments-form__main">Комментарий</h1>
         <form class="comments" action="https://echo.htmlacademy.ru" method="POST">
           <textarea name="comments__field" id="comments__field" rows="10">Расскажите обо всех повадках кота</textarea>
         </form>
       </div>
 
       <div class="programs-more">
-        <h1>Дополнительно</h1>
-        <ul>
-          <li>
+        <h2 class="programs-more__title">Дополнительно</h2>
+        <ul class="programs-more__list">
+          <li class="programs-more__checkboxes">
             <input type="checkbox" name="programs-more__sugar" checked>Сахарозаменитель</li>
-          <li>
+          <li class="programs-more__checkboxes">
             <input type="checkbox" name="programs-more__water">Питьевая вода </li>
-          <li>
+          <li class="programs-more__checkboxes">
             <input type="checkbox" name="programs-more__milk">Молоко</li>
-          <li>
+          <li class="programs-more__checkboxes">
             <input type="checkbox" name="programs-more__vit">Витамины</li>
         </ul>
       </div>
@@ -94,11 +92,11 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footet__wrapper">
+    <div class="page-footer__wrapper">
       <section class="page-footer__partnership">
         <h2 class="visually-hidden">Сотрудничество</h2>
         <h1 class="page-footer__title">Приглашаем к сотрудничеству дилеров!</h1>
-        <p class="page-footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
 
         <!--Потом будет карта-->
         <img class="map" src="https://via.placeholder.com/150x150" alt="Карта">
