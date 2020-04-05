@@ -1,0 +1,24 @@
+.present {
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #72b649;
+  width: 280px;
+  height: 290px;
+  size: initial;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.present__img {
+  margin-top: 70px;
+}
+
+.present__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+}

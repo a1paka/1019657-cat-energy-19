@@ -1,0 +1,24 @@
+.catalog-extra__header {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.catalog-extra__item {
+  &--name {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &--about {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &--price {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

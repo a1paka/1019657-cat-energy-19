@@ -1,0 +1,21 @@
+.page-main__wrapper {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  .page-main__wrapper-title {
+    padding-top: 30px;
+    color: $main_text_color;
+    font-size: 36px;
+    text-align: center;
+    line-height: 36px;
+  }
+
+  .page-main__wrapper-text {
+    text-transform: uppercase;
+    color: $main_text_color;
+    text-align: center;
+    font-size: 14px;
+    background: none;
+    line-height: 5px;
+  }
+}
