@@ -1,21 +1,101 @@
 .page-main__wrapper {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  padding: 0 20px;
+}
 
-  .page-main__wrapper-title {
-    padding-top: 30px;
-    color: $main_text_color;
-    font-size: 36px;
-    text-align: center;
-    line-height: 36px;
+.page-main__preview-title {
+  padding-top: 30px;
+  color: $main_text_color;
+  font-size: 36px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.page-main__preview-text {
+  text-transform: uppercase;
+  color: $main_text_color;
+  text-align: center;
+  font-size: 14px;
+  background: none;
+  line-height: 5px;
+}
+
+.page-main__link {
+  color: $main_text_color;
+  background-color: #68b738;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10 75 10 70;
+}
+
+.page-main__link-wrap {
+  margin-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    padding: 0 20px;
+    background-image: none;
   }
 
-  .page-main__wrapper-text {
+  .page-main__preview-title {
+    color: black;
+    font-size: 60px;
+    text-align: left;
+    line-height: 60px;
+    margin-left: 50px;
+    margin-right: 140px;
+    font-weight: 100;
+  }
+
+  .page-main__preview-text {
     text-transform: uppercase;
-    color: $main_text_color;
-    text-align: center;
-    font-size: 14px;
+    color: black;
+    text-align: left;
+    font-size: 20px;
     background: none;
-    line-height: 5px;
+    line-height: 20px;
+    margin-left: 50px;
+  }
+
+  .page-main__logo-image {
+    display: none;
+  }
+
+  .page-main__link {
+    color: $main_text_color;
+    background-color: #68b738;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10 25 10 20;
+  }
+
+  .page-main__link-wrap {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .page-main__link-wrap-pic {
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-color: chocolate;
+    background-repeat: no-repeat;
+    min-height: 600px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__link-wrap-pic {
+    background-color: white;
+    background-image: none;
+    min-height: 250px;
+  }
+
+  .page-main__preview {
+    width: 750px;
+    margin-left: 70px;
   }
 }

@@ -1,0 +1,14 @@
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    margin-right: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: $main_text_color;
+  }
+}
