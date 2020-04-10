@@ -1,6 +1,7 @@
 .advantage__title {
   text-align: center;
   font-size: 36px;
+  font-weight: 400;
   line-height: 60px;
 }
 
@@ -19,36 +20,36 @@
   flex-direction: row;
   align-items: center;
 }
-/*
+
+.advantage__item-pic {
+  background-color: $advantage_bg_color;
+  width: 80px;
+  height: 60px;
+  margin-right: 20px;
+
   &--leaf {
     background-image: url("../img/advantage-leaf@1x.png");
-    width: 60px;
-    height: 60px;
-    background-color: $advantage_bg_color;
     background-repeat: no-repeat;
-    margin-right: 20px;
+    background-position: center;
   }
 
   &--powder {
     background-image: url("../img/advantage-powder@1x.png");
-    background-color: $advantage_bg_color;
+
     background-repeat: no-repeat;
-    margin-right: 20px;
+    background-position: center;
   }
 
   &--dining {
     background-image: url("../img/advantage-dining@1x.png");
-    background-color: $advantage_bg_color;
     background-repeat: no-repeat;
-    margin-right: 20px;
+    background-position: center;
   }
 
   &--clock {
     background-image: url("../img/advantage-clock@1x.png");
-
-    background-color: $advantage_bg_color;
     background-repeat: no-repeat;
-    margin-right: 20px;
+    background-position: center;
   }
 }
 
@@ -56,13 +57,13 @@
   margin: 0;
   width: 100%;
 }
-*/
+
 
 @media (min-width: $tablet-width) {
   .advantage__title {
     text-align: left;
     font-size: 60px;
-    font-weight: 100;
+    font-weight: 400;
   }
 
   .advantage__container {
@@ -80,33 +81,33 @@
 
   .advantage__item {
     display: flex;
-    width: 260px;
-    min-height: 317px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 230px;
+  }
+
+  .advantage__item-pic {
+    width: 80px;
+    height: 80px;
   }
 
   .advantage__item-text {
-    margin-right: 40px;
+    margin: 20px 0 120px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage__item {
-    width: 325px;
-    height: 270px;
+    width: 245px;
+    height: 190px;
     justify-content: space-between;
-  }
-
-  .advantage__title {
-    margin-left: 60px;
   }
 
   .advantage__item-text {
     margin-right: 20px;
-    margin-left: 20px;
   }
 
   .advantage__container {
-    display: flex;
-    flex-direction: row;
+    display: block;
   }
 }

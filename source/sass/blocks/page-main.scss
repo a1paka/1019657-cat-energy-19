@@ -5,9 +5,10 @@
 }
 
 .page-main__preview-title {
-  padding-top: 30px;
+  padding-top: 25px;
   color: $main_text_color;
   font-size: 36px;
+  font-weight: 400;
   text-align: center;
   line-height: 36px;
 }
@@ -17,8 +18,8 @@
   color: $main_text_color;
   text-align: center;
   font-size: 14px;
-  background: none;
   line-height: 5px;
+  margin-bottom: 35px;
 }
 
 .page-main__link {
@@ -27,7 +28,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
-  padding: 10 75 10 70;
+  padding: 10px 75px 10px 70px;
 }
 
 .page-main__link-wrap {
@@ -45,9 +46,8 @@
     font-size: 60px;
     text-align: left;
     line-height: 60px;
-    margin-left: 50px;
-    margin-right: 140px;
-    font-weight: 100;
+    margin: 0 50px 0 100px;
+    font-weight: 400;
   }
 
   .page-main__preview-text {
@@ -57,7 +57,7 @@
     font-size: 20px;
     background: none;
     line-height: 20px;
-    margin-left: 50px;
+    margin-left: 100px;
   }
 
   .page-main__logo-image {
@@ -71,31 +71,36 @@
     text-transform: uppercase;
     font-size: 20px;
     line-height: 20px;
-    padding: 10 25 10 20;
+    padding: 10px 25px 10px 20px;
   }
 
   .page-main__link-wrap {
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 100px;
   }
 
   .page-main__link-wrap-pic {
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-color: chocolate;
     background-repeat: no-repeat;
-    min-height: 600px;
+    margin-top: -65px;
+    height: 600px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__link-wrap-pic {
+    background-image: url("../img/index-can-desktop@1x.png");
     background-color: white;
-    background-image: none;
-    min-height: 250px;
+    margin-left: 400px;
+    margin-top: -250px;
+    height: 499px;
   }
 
-  .page-main__preview {
-    width: 750px;
-    margin-left: 70px;
+  .page-main__preview-title {
+    width: 420px;
+  }
+
+  .page-main__wrapper {
+    padding: 0;
   }
 }

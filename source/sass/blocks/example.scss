@@ -7,6 +7,7 @@
   padding-top: 46px;
   text-transform: uppercase;
   font-size: 24px;
+  font-weight: 400;
   text-align: center;
   padding-bottom: 16px;
 }
@@ -19,44 +20,83 @@
   padding-right: 20px;
 }
 
+.example__container-image {
+  &--slim {
+    background-image: url("../img/icon-cat-slim.svg");
+    width: 50px;
+    height: 45px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  &--pro {
+    background-image: url("../img/icon-cat-pro.svg");
+    width: 55px;
+    height: 60px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 10px;
+  }
+}
+
 .example__link {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
+  color: black;
 }
 
 .example__item-link-block {
   padding-top: 20px;
-  padding-left: 20px;
   padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.example__link-arrow {
+  margin-left: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .example__container {
-    background-color: $example_bg_color;
-    margin-top: 40px;
     text-align: left;
   }
 
   .example__container-slim {
-    /*background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: right;*/
     margin: 0 40px 0 40px;
     padding-top: 10px;
   }
 
   .example__container-pro {
-    /*background-image: url("../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
-    background-position: right;*/
     margin: 0 40px 0 40px;
     padding-top: 15px;
   }
 
+  .example__container-image {
+    &--slim {
+      width: 160px;
+      height: 180px;
+      margin-top: 60px;
+      margin-left: 450px;
+    }
+
+    &--pro {
+      width: 270px;
+      height: 127px;
+      margin-top: 145px;
+      margin-left: 350px;
+    }
+  }
+
   .example__item-title {
-    font-weight: 100;
+    font-size: 36px;
+    line-height: 37px;
+    font-weight: 400;
     text-align: left;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -67,6 +107,7 @@
     padding-top: 20px;
     padding-bottom: 45px;
     margin-top: 40px;
+    border: none;
   }
 
   .example__item-describe {
@@ -90,12 +131,29 @@
     margin-top: 40px;
     text-align: left;
     width: 570px;
-    margin-left: 60px;
+    height: 375px;
     margin-right: 60px;
   }
 
   .example__item-describe {
-    margin-right: 17px;
+    margin: 0;
+  }
+
+  .example__container-image {
+    &--slim {
+      width: 75px;
+      height: 80px;
+      background-repeat: no-repeat;
+      position: absolute;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    &--pro {
+      width: 130px;
+      height: 60px;
+      margin-top: 45px;
+      margin-left: -30px;
+    }
   }
 }
-

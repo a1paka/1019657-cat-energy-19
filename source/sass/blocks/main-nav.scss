@@ -1,8 +1,8 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+  padding-top: 20px;
   list-style: none;
-  min-height: 265px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,7 +19,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 65px;
-    margin-top: 20px;
   }
 
   .main-nav__toggle {
@@ -28,22 +27,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    /*background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;*/
-    width: 720;
-    height: 570px;
-    position: absolute;
-  }
-
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
     text-align: right;
     justify-content: space-around;
     padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
 }
-
