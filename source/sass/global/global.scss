@@ -1,15 +1,21 @@
 body {
   background: $main_bg_color;
   font-family: $main_font;
-  width: 320px;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 18px;
   color: #111111;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-  max-width: 100;
+  max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -23,4 +29,18 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background: $main_bg_color;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background: $main_bg_color;
+    padding: 0 110px;
+  }
 }

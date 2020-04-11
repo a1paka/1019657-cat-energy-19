@@ -1,24 +1,132 @@
+.catalog-extra {
+  padding: 0 20px;
+}
+
 .catalog-extra__header {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top: 1px solid #d9d9d9;
 }
 
 .catalog-extra__item {
+  display: flex;
+  flex-direction: column;
+
   &--name {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 16px;
+    padding-top: 10px;
+    border-top: 1px solid #d9d9d9;
   }
 
   &--about {
     font-family: "Arial", "Helvetica", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
   }
 
   &--price {
     font-family: "Arial", "Helvetica", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
+  }
+}
+
+.catalog-extra__order {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $main_text_color;
+  text-decoration: none;
+  background-color: #68b738;
+  padding: 10px 100px 10px 120px;
+  margin-top: 20px;
+}
+
+.catalog-extra__item-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-extra__item-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 20px;
+  }
+
+  .catalog-extra__item {
+    &--name {
+      padding-top: 0;
+      border: none;
+    }
+
+    &--about {
+      margin-right: 60px;
+    }
+  }
+
+  .catalog-extra__item-info {
+    margin-top: 20px;
+  }
+
+  .catalog-extra__header {
+    border: none;
+  }
+
+  .catalog-extra__order {
+    margin: 0;
+    padding: 10px 310px 10px 320px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-extra__item {
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #d9d9d9;
+
+    &--name {
+      padding-top: 0;
+      border: none;
+      margin-top: 5px;
+    }
+
+    &--about {
+      width: 100px;
+      margin-left: 60px;
+    }
+
+    &--price {
+      margin-right: 40px;
+    }
+  }
+
+  .catalog-extra__item-info {
+    margin-top: 5px;
+  }
+
+  .catalog-extra__order {
+    margin-top: 10px;
+    padding: 10px 75px 10px 75px;
+  }
+
+  .catalog-extra__item-wrap {
+    border: none;
+  }
+
+  .catalog-extra {
+    padding: 0;
+    width: 750px;
   }
 }

@@ -1,12 +1,15 @@
 .present {
+  width: 280px;
+  height: 290px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.present__wrap {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: #72b649;
-  width: 280px;
-  height: 290px;
-  size: initial;
-  margin-top: 50px;
-  text-align: center;
 }
 
 .present__img {
@@ -18,7 +21,50 @@
   font-size: 16px;
   line-height: 20px;
   color: white;
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 60px;
   margin-left: 60px;
   margin-right: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .present__wrap {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: #72b649;
+    width: 708px;
+    height: 200px;
+  }
+
+  .present__text {
+    padding: 0;
+    margin-top: 80px;
+    margin-left: 250px;
+    width: 167px;
+    text-align: left;
+  }
+
+  .present__img {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .present__wrap {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: #72b649;
+    width: 245px;
+    height: 290px;
+  }
+
+  .present__text {
+    margin: 0;
+  }
+
+  .present {
+    padding: 0;
+  }
 }

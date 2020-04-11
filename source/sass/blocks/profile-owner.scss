@@ -1,5 +1,17 @@
+.profile-owner {
+  padding: 0 20px;
+}
+
 .profile-owner__contacts {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   margin-right: 70px;
+}
+
+.profile-owner__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 100px;
 }
