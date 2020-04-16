@@ -6,6 +6,7 @@
 .example__container-pro {
   background-color: $example_bg_color;
   padding: 15px 20px 22px 20px;
+  position: relative;
 }
 
 .example__item-title {
@@ -30,8 +31,8 @@
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
-  top: 787px;
-  left: 50px;
+  top: 20px;
+  left: 30px;
 }
 
 .example__container-slim::before {
@@ -41,8 +42,8 @@
   height: 50px;
   border-radius: 50%;
   background-color: #68b738;
-  top: 791px;
-  left: 40px;
+  top: 25px;
+  left: 23px;
 }
 
 .example__container-pro::after {
@@ -52,8 +53,8 @@
   background-repeat: no-repeat;
   width: 70px;
   height: 50px;
-  top: 1088px;
-  left: 33px;
+  top: 35px;
+  left: 13px;
 }
 
 .example__container-pro::before {
@@ -63,8 +64,8 @@
   height: 50px;
   border-radius: 50%;
   background-color: #68b738;
-  top: 1076px;
-  left: 40px;
+  top: 25px;
+  left: 20px;
 }
 
 .example__link {
@@ -133,29 +134,29 @@
   .example__container-slim::after {
     width: 150px;
     height: 195px;
-    top: 1030px;
-    left: 505px;
+    top: 80px;
+    left: 475px;
   }
 
   .example__container-slim::before {
     width: 200px;
     height: 200px;
-    top: 1040px;
-    left: 477px;
+    top: 90px;
+    left: 445px;
   }
 
   .example__container-pro::after {
     width: 273px;
     height: 120px;
-    top: 1488px;
-    left: 440px;
+    top: 135px;
+    left: 409px;
   }
 
   .example__container-pro::before {
     width: 200px;
     height: 200px;
-    top: 1445px;
-    left: 477px;
+    top: 90px;
+    left: 450px;
   }
 }
 
@@ -198,28 +199,28 @@
   .example__container-slim::after {
     width: 70px;
     height: 95px;
-    top: 818px;
-    left: 177px;
+    top: 50px;
+    left: 100px;
   }
 
   .example__container-slim::before {
     width: 100px;
     height: 100px;
-    top: 823px;
-    left: 162px;
+    top: 50px;
+    left: 80px;
   }
 
   .example__container-pro::after {
     width: 136px;
     height: 56px;
-    top: 845px;
-    left: 795px;
+    top: 70px;
+    left: 50px;
   }
 
   .example__container-pro::before {
     width: 100px;
     height: 100px;
-    top: 823px;
-    left: 812px;
+    top: 50px;
+    left: 80px;
   }
 }

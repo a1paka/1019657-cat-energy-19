@@ -14,7 +14,7 @@
     <div class="page-header__menu">
       <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="190" height="45" alt="Логотип">
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -91,31 +91,27 @@
 
     <section class="live-example">
       <h2 class="visually-hidden">Живой пример</h2>
-      <h2 class="live-example__title">Живой пример</h2>
       <div class="live-example__wrap">
+      <h2 class="live-example__title">Живой пример</h2>
         <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <div class="live-example__main">
           <div class="live-example__result-wrap">
-            <div class="live-example__result-item-weight">
-              <div class="live-example__result-info">5 кг</div>
-              <div class="live-example__result-subinfo">cнижение
-                <br>веса</div>
+            <div class="live-example__result-field">
+            <fieldset class="live-example__result">
+              <legend class="live-example__result-weight">cнижение<br>веса</legend>
+              <div class="live-example__result-weight-info">5кг</div>
+            </fieldset>
+            <fieldset class="live-example__result">
+              <legend class="live-example__result-time">затрачено
+                <br>времени</legend>
+              <div class="live-example__result-time-info">60 дней</div>
+            </fieldset>
+            <div class="live-example__costs-wrap">
+              <p class="live-example__costs">Затраты на питание: 15 000 руб.</p>
             </div>
-            <div class="live-example__result-item-time">
-              <div class="live-example__result-info">60 дней</div>
-              <div class="live-example__result-subinfo">затрачено
-                <br>времени
-                <div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="live-example__costs-wrap">
-          <p class="live-example__costs">Затраты на питание: 15 000 руб.</p>
-        </div>
-        <img class="live-example__logo-example" src="./img/before-mobile@1x.png" width="320" height="240" alt="Картинка кота от\до">
-        <!--Ползунок будет доработан в css позже-->
+            <img class="live-example__logo-example" src="./img/before-mobile@1x.png" width="320" height="240" alt="Картинка кота от\до">
+                  <!--Ползунок будет доработан в css позже-->
         <div class="live-example__slider">
           <div class="live-example__slider--before">
             <p>Было</p>
@@ -124,6 +120,22 @@
           </div>
           <div class="live-example__slider--after">
             <p>Стало</p>
+          </div>
+        </div>
+            <!--
+            <div class="live-example__result-info">
+              <div class="live-example__result-info--weight">5 кг</div>
+              <div class="live-example__result-subinfo">cнижение
+                <br>веса</div>
+            </div>
+            <div class="live-example__result-info">
+              <div class="live-example__result-info--time">60 дней</div>
+              <div class="live-example__result-subinfo">затрачено
+                <br>времени
+                <div>-->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -138,7 +150,7 @@
 
       <!--Потом будет карта-->
     </section>
-    <img src="./img/bg-map-mobile@1x.png">
+    <img class="page-footer__map" src="./img/bg-map-mobile@1x.png" width="320" height="360">
 
     <div class="page-footer__wrapper">
       <img class="page-footer__logo" src="./img/logo-footer.svg" width="130" height="25" alt="Логотип">

@@ -121,6 +121,14 @@
       top: -40px;
     }
 
+    &--dining {
+      margin: 0;
+    }
+
+    &--clock {
+      margin-bottom: 0;
+    }
+
     &--dining::before {
       content: "3";
       position: absolute;
@@ -171,6 +179,6 @@
   .advantage__item:nth-child(1),
   .advantage__item:nth-child(2),
   .advantage__item:nth-child(3) {
-    margin-right: 95px;
+    margin-right: 60px;
   }
 }
