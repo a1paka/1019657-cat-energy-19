@@ -172,7 +172,11 @@
 
   .example__container-slim,
   .example__container-pro {
-    padding: 76px 54px 61px 52px;
+    padding: 76px 30px 61px 30px;
+  }
+
+  .example__container {
+    margin-right: 30px;
   }
 
   .example__item-describe {
