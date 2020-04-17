@@ -28,6 +28,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .present {
+    padding: 0 10px;
+    margin-top: 65px;
+  }
+
   .present__wrap {
     display: flex;
     flex-direction: row;
@@ -36,6 +41,7 @@
     background-color: #72b649;
     width: 708px;
     height: 200px;
+    margin: 0;
   }
 
   .present__text {
@@ -52,7 +58,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .present {
+    padding: 0;
+    position: absolute;
+    top: 1544px;
+    right: 75px;
+  }
+
   .present__wrap {
+    flex-direction: column;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-color: #72b649;
@@ -60,11 +74,20 @@
     height: 290px;
   }
 
-  .present__text {
-    margin: 0;
+  .present__wrap::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 60px;
+    top: 64px;
+    right: 130px;
   }
 
-  .present {
-    padding: 0;
+  .present__text {
+    width: 180px;
+    text-align: center;
+    margin: 185px  0 0 30px;
   }
 }
