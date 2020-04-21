@@ -79,6 +79,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    margin: 20px 10px 0 0;
+  }
+
   .main-nav__list {
     text-transform: uppercase;
     text-decoration: none;

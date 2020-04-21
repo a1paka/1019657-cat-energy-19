@@ -86,7 +86,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    margin: 0 10px 0 10px;
+    padding: 0 10px;
   }
 
   .example__container-slim,
@@ -162,21 +162,16 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    margin-top: 263px;
-    margin-left: 0;
-    margin-right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 263px 0 0 0;
+    padding: 0;
   }
 
   .example__container-slim,
   .example__container-pro {
-    padding: 76px 30px 61px 30px;
-  }
-
-  .example__container {
-    margin-right: 30px;
+    padding: 76px 55px 61px 55px;
   }
 
   .example__item-describe {

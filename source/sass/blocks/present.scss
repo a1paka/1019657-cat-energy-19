@@ -1,7 +1,4 @@
 .present {
-  width: 280px;
-  height: 290px;
-  margin-top: 50px;
   text-align: center;
   padding: 0 20px;
 }
@@ -10,6 +7,25 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: #72b649;
+  width: 280px;
+  height: 290px;
+}
+
+.present::before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  fill: white;
+  width: 58px;
+  height: 60px;
+  top: 150px;
+  left: 110px;
+}
+
+.present::before path {
+  fill: white;
 }
 
 .present__img {
@@ -21,7 +37,7 @@
   font-size: 16px;
   line-height: 20px;
   color: white;
-  padding-top: 50px;
+  padding-top: 190px;
   padding-bottom: 60px;
   margin-left: 60px;
   margin-right: 60px;
@@ -61,8 +77,8 @@
   .present {
     padding: 0;
     position: absolute;
-    top: 1544px;
-    right: 75px;
+    top: 1480px;
+    right: 40px;
   }
 
   .present__wrap {
@@ -70,19 +86,13 @@
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-color: #72b649;
-    width: 245px;
+    width: 250px;
     height: 290px;
   }
 
-  .present__wrap::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    width: 55px;
-    height: 60px;
-    top: 64px;
-    right: 130px;
+  .present::before {
+    top: 140px;
+    left: 100px;
   }
 
   .present__text {

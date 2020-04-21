@@ -82,7 +82,7 @@
 }*/
 
 .live-example__slider {
-  padding: 0 65px;
+  padding: 0 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,12 +104,14 @@
     height: 12px;
     border-radius: 25px;
     top: 30px;
-    left: 116px;
+    left: 95px;
   }
 }
 
 .live-example__logo-example {
   padding: 0;
+  width: auto;
+  min-height: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -120,21 +122,28 @@
     border-top: 1px solid #d9d9d9;
   }
 
+
   .live-example__wrap {
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
   }
 
   .live-example__title {
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 70px 0;
+    padding: 0 10px;
   }
 
   .live-example__text {
     width: 700px;
     font-size: 16px;
     line-height: 24px;
+    padding: 0 10px;
+  }
+
+  .live-example__result-field {
+    padding: 0 10px;
   }
 
   .live-example__result-weight-info,
@@ -144,13 +153,8 @@
   }
 
   .live-example__result-wrap {
-    margin-top: 25px;
-  }
-
-  .live-example__main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 40px 0;
+    height: 810px;
   }
 
   .live-example__costs {
@@ -158,9 +162,51 @@
     text-align: right;
     width: 180px;
   }
+
+  .live-example__pic {
+    margin-top: 65px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .live-example__slider {
+    height: 361px;
+    background-color: #f2f2f2;
+    top: -345px;
+    z-index: -1;
+    align-items: flex-end;
+    margin-top: 45px;
+    padding: 0 78px 55px 78px;
+
+    p {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &--scale::before {
+      content: "";
+      position: absolute;
+      width: 445px;
+      height: 1px;
+      top: 330px;
+      left: 135px;
+      border: 2px solid #dcdcdc;
+      background-color: #dcdcdc;
+      border-radius: 25px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .live-example {
+    border: none;
+  }
+
+  .live-example__main {
+    height: 250px;
+  }
+
   .live-example__wrap {
     background-color: #f2f2f2;
     padding: 0;
@@ -171,26 +217,53 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 100px;
   }
 
   .live-example__text {
-    padding-top: 60px;
+    width: 430px;
   }
 
   .live-example__costs {
-    text-align: left;
+    margin: 0;
   }
 
   .live-example__title {
     background-color: white;
+    padding-bottom: 80px;
   }
 
   .live-example__result-field {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    height: 100px;
+    margin-left: 10px;
+  }
 
-    margin-right: 100px;
+  .live-example__pic {
+    margin-top: 65px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    height: 200px;
+    top: -450px;
+  }
+
+  .live-example__slider {
+    height: 350px;
+    background-color: #f2f2f2;
+    top: -345px;
+    z-index: -1;
+    align-items: flex-end;
+
+    &--scale::before {
+      width: 370px;
+      top: 320px;
+      left: 155px;
+      border: 2px solid #dcdcdc;
+      background-color: #dcdcdc;
+      border-radius: 25px;
+    }
   }
 }

@@ -17,8 +17,7 @@
   .page-header {
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
-    padding-left: 40px;
+    justify-content: space-between;
   }
 
   .page-header__logo-image {
@@ -27,15 +26,18 @@
 
   .page-header__menu {
     order: 0;
+    padding: 15px 0 0 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     justify-content: space-between;
+    padding-left: 0;
   }
 
   .page-header__menu {
     margin-top: 40px;
+    padding: 0;
   }
 }
