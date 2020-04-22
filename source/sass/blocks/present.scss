@@ -1,6 +1,7 @@
 .present {
   text-align: center;
   padding: 0 20px;
+  margin-top: -25px;
 }
 
 .present__wrap {
@@ -45,8 +46,8 @@
 
 @media (min-width: $tablet-width) {
   .present {
-    padding: 0 10px;
-    margin-top: 65px;
+    padding: 0 30px 10px 30px;
+    margin-top: 10px;
   }
 
   .present__wrap {
@@ -60,10 +61,15 @@
     margin: 0;
   }
 
+  .present::before {
+    top: 125px;
+    left: 90px;
+  }
+
   .present__text {
     padding: 0;
-    margin-top: 80px;
-    margin-left: 250px;
+    margin-top: 73px;
+    margin-left: 425px;
     width: 167px;
     text-align: left;
   }

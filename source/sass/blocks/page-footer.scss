@@ -5,12 +5,20 @@
 
 .page-footer__partnership {
   background-color: $main_bg_color;
-  padding: 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 11px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  padding-right: 20px;
+}
+
+.page-footer__partnership-bg {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35px;
+  padding: 10px 0 20px 0;
 }
 
 .page-footer__title {
@@ -19,22 +27,39 @@
   font-weight: 400;
   text-transform: uppercase;
   padding-right: 20px;
+  margin-left: 20px;
 }
 
-.page-footer__address {
+.page-footer__address-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page-footer__address,
+.page-footer__city {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
 
+.page-footer__address {
+  margin-top: 18px;
+}
+
+.page-footer__city {
+  margin-top: -15px;
+}
+
 .page-footer__logo {
-  margin: 0 0 0 74px;
-  padding-bottom: 30px;
+  margin: 42px 0 0 74px;
+  padding: 0 0 30px 0;
 }
 
 .page-footer__social {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+  padding-top: 5px;
 }
 
 .page-footer__social-contacts {
@@ -55,8 +80,7 @@
 .page-footer__map {
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  width: 320px;
-  height: 400px;
+  height: 360px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@1x.png");
@@ -77,16 +101,31 @@
     font-size: 20px;
     line-height: 25px;
     width: 150px;
+    margin-top: 35px;
+  }
+
+  .page-footer__address,
+  .page-footer__city {
+    font-size: 16px;
+    text-align: right;
   }
 
   .page-footer__address {
-    font-size: 16px;
-    text-align: right;
-    width: 150px;
+    width: 160px;
+    margin-top: 35px;
   }
 
-  .page-footer__partnership {
-    padding: 0 45px 20px 45px;
+  .page-footer__city {
+    margin-top: 20px;
+  }
+
+  .page-footer__partnership-bg {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 65px;
+    padding: 30px 70px 20px 50px;
   }
 
   .page-footer__logo {
@@ -113,7 +152,6 @@
     background-repeat: no-repeat;
     width: 100%;
     padding: 0;
-    margin-top: 18px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@1x.png"), url("../img/bg-map-tablet@2x.png 2x");
@@ -127,8 +165,12 @@
     width: 500px;
     position: absolute;
     margin-left: 40px;
-    margin-top: 120px;
+    margin-top: 80px;
     padding: 40px;
+  }
+
+  .page-footer__partnership-bg {
+    background-color: white;
   }
 
   .page-footer__map {

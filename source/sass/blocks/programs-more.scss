@@ -15,7 +15,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  margin-top: 37px;
+  margin-top: 40px;
 }
 
 .programs-more__label {
@@ -42,6 +42,7 @@
 .programs-more__link-wrap {
   padding: 0 20px;
   margin-top: 48px;
+  margin-bottom: 90px;
 }
 
 .programs-more__link {
@@ -64,6 +65,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-top: 64px;
+    padding: 0 20px;
   }
 
   .programs-more__list {
@@ -73,7 +75,8 @@
     justify-content: space-between;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 63px;
+    margin-top: 66px;
+    padding: 0 55px 0 20px;
   }
 
   .programs-more__input + label::before {
@@ -89,7 +92,6 @@
     display: block;
     position: relative;
     cursor: pointer;
-    margin: 0 55px 25px 45px;
   }
 
   .programs-more__head {
@@ -99,7 +101,7 @@
   }
 
   .programs-more__link-wrap {
-    padding: 0 50px;
+    padding: 0 70px;
     margin-top: 25px;
   }
 
@@ -111,7 +113,7 @@
 
 @media (min-width: $desktop-width) {
   .programs-more {
-    padding: 0;
+    padding: 0 20px;
   }
 
   .programs-more__link-wrap {
@@ -121,6 +123,7 @@
 
   .programs-more__link {
     font-size: 20px;
+    margin-left: 40px;
     padding: 11px 207px 11px 207px;
   }
 }
