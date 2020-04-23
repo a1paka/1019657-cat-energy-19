@@ -1,7 +1,7 @@
 .present {
   text-align: center;
   padding: 0 20px;
-  margin-top: -25px;
+  margin-top: 53px;
 }
 
 .present__wrap {
@@ -10,27 +10,13 @@
   background-color: #72b649;
   width: 280px;
   height: 290px;
-}
-
-.present::before {
-  content: "";
   position: relative;
-  display: block;
-  background-image: url("../img/icon-gift.svg");
-  background-repeat: no-repeat;
-  fill: white;
-  width: 58px;
-  height: 60px;
-  top: 150px;
-  left: 110px;
-}
-
-.present::before path {
-  fill: white;
 }
 
 .present__img {
-  margin-top: 70px;
+  position: absolute;
+  margin-top: 65px;
+  margin-left: 110px;
 }
 
 .present__text {
@@ -38,7 +24,7 @@
   font-size: 16px;
   line-height: 20px;
   color: white;
-  padding-top: 190px;
+  padding-top: 185px;
   padding-bottom: 60px;
   margin-left: 60px;
   margin-right: 60px;
@@ -61,11 +47,6 @@
     margin: 0;
   }
 
-  .present::before {
-    top: 125px;
-    left: 90px;
-  }
-
   .present__text {
     padding: 0;
     margin-top: 73px;
@@ -73,17 +54,13 @@
     width: 167px;
     text-align: left;
   }
-
-  .present__img {
-    margin-left: 100px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .present {
     padding: 0;
     position: absolute;
-    top: 1480px;
+    top: 1585px;
     right: 40px;
   }
 
@@ -96,14 +73,15 @@
     height: 290px;
   }
 
-  .present::before {
-    top: 140px;
-    left: 100px;
-  }
-
   .present__text {
     width: 180px;
     text-align: center;
     margin: 185px  0 0 30px;
+  }
+
+  .present__img {
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 90px;
   }
 }
