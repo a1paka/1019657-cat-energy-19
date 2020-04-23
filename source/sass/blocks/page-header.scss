@@ -1,41 +1,50 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
 
-  .page-header__logo-image {
-    margin-top: 7px;
-  }
+.page-header__logo-link {
+  margin-top: 12px;
+  padding: 0 20px;
 }
 
 .page-header__menu {
   display: flex;
-  order: 2;
-  padding: 0 20px;
+  flex-direction: column;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-    padding-left: 40px;
+  .page-header__logo-image {
+    margin: 10px 0 0 5px;
   }
 
-  .page-header__logo-image {
-    margin-top: 10px;
+  .page-header__logo-link {
+    padding: 0;
+    margin-right: 84px;
   }
 
   .page-header__menu {
     order: 0;
+    flex-direction: row;
+    padding: 0 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .page-header__logo-link {
+    margin-top: 20px;
   }
 
   .page-header__menu {
-    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
   }
 }

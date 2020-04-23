@@ -11,14 +11,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .profile-owner__contacts {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 28px;
+  margin-top: 29px;
   margin-right: 70px;
 }
 
@@ -42,7 +42,7 @@ input[type="tel"] {
 
 @media (min-width: $tablet-width) {
   .profile-owner {
-    padding: 0 50px;
+    padding: 0 70px;
   }
 
   .profile-owner__wrap {
@@ -71,7 +71,7 @@ input[type="tel"] {
 
 @media (min-width: $desktop-width) {
   .profile-owner {
-    padding: 0;
+    padding: 0 40px;
   }
 
   .profile-owner__form-wrap {

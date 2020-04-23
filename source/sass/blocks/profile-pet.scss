@@ -14,7 +14,7 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  margin-top: 35px;
+  margin-top: 45px;
   padding-left: 20px;
 }
 
@@ -33,7 +33,7 @@
 
 label {
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 input[type="text"] {
@@ -47,22 +47,23 @@ input[type="text"] {
 
 @media (min-width: $tablet-width) {
   .profile-pet__wrap {
-    padding: 0 50px;
+    padding: 0 70px;
   }
 
   .profile-pet__header {
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
-    padding-left: 10px;
-    margin-top: 75px;
+    padding-left: 30px;
+    margin-top: 53px;
   }
 
   .profile-pet__fill-form {
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
-    margin: 55px 0 0 30px;
+    margin-top: 55px;
+    padding: 0 70px;
     width: 350px;
   }
 
@@ -73,7 +74,7 @@ input[type="text"] {
 
   label {
     text-transform: uppercase;
-    margin-right: 15px;
+    margin-right: 18px;
   }
 
   .profile-pet__form {
@@ -82,13 +83,13 @@ input[type="text"] {
   }
 
   .profile-pet__form-wrap {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 
   input[type="text"] {
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 0 14px 0;
+    padding: 15px 0 15px 0;
     flex-grow: 1;
   }
 }
@@ -96,17 +97,17 @@ input[type="text"] {
 @media (min-width: $desktop-width) {
   .profile-pet__header {
     margin-top: 85px;
-    padding: 0;
+    padding: 0 40px;
   }
 
   .profile-pet__fill-form {
-    padding: 0;
+    padding: 0 40px;
     margin: 55px 0 0 0;
   }
 
   .profile-pet__wrap {
     margin: 0;
-    padding: 0;
+    padding: 0 40px;
     display: flex;
     flex-direction: row;
   }
