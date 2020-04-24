@@ -83,15 +83,13 @@
 }
 
 .catalog__more-img {
-  text-align: center;
   padding-top: 25px;
   padding-bottom: 3px;
-  border-top: 1px solid #d9d9d9;
 }
 
 .catalog__more-plus {
   margin-top: 10px;
-  margin-left: 60px;
+  text-align: center;
 }
 
 .catalog__more-show {
@@ -228,14 +226,6 @@
     padding: 0 36px 0 36px;
   }
 
-  .catalog__more-plus {
-    width: 60px;
-    height: 60px;
-    position: relative;
-    top: 20px;
-    left: -15px;
-  }
-
   .catalog__more-wrap {
     width: 250px;
   }
@@ -243,7 +233,10 @@
   .catalog__more-img {
     text-align: center;
     padding: 0;
-    border: none;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    top: 45px
   }
 
   .catalog__more-show {
@@ -301,7 +294,7 @@
   .catalog__more {
     height: 430px;
     border: 1px solid #d9d9d9;
-    margin-top: 125px;
+    margin-top: 115px;
     padding: 0;
   }
 

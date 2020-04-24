@@ -3,10 +3,30 @@
   font-size: 16px;
   line-height: 16px;
   margin-top: 30px;
+  padding-left: 20px;
+  color: black;
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .copyright__link {
-  margin-top: 18px;
+  padding-right: 15px;
+}
+
+.copyright__link-img {
+  position: relative;
+  margin-left: 126px;
+  top: 15px;
+
+  &:hover {
+    fill: #64b937;
+  }
+
+  &:active {
+    fill: #c8e2bd;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -14,7 +34,7 @@
     margin-top: 20px;
   }
 
-  .copyright__link {
-    margin-top: 10px;
+  .copyright__link-img {
+    margin-left: 5px;
   }
 }
