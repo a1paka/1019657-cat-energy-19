@@ -83,6 +83,12 @@ input[type="tel"] {
     line-height: 20px;
     padding: 12px 0 20px 0;
   }
+
+  .profile-owner__email-pic,
+  .profile-owner__tel-pic {
+    right: 15px;
+    top: 15px;
+}
 }
 
 @media (min-width: $desktop-width) {
