@@ -131,12 +131,12 @@
     position: absolute;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-color: #64a83b;
-    width: 100%;
+    min-width: 100%;
     height: 696px;
     top: -195px;
     left: 605px;
     z-index: -1;
+    margin: 0 auto;
   }
 
   .page-main__preview-title {

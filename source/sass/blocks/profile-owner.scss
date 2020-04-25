@@ -12,6 +12,34 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 17px;
+  position: relative;
+  z-index: -1;
+}
+
+input[type="email"],
+input[type="tel"] {
+  font-family: $main_font;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 12px 0 12px 0;
+  width: 190px;
+  flex-grow: 1;
+}
+
+.profile-owner__email-pic-wrap,
+.profile-owner__tel-pic-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.profile-owner__email-pic,
+.profile-owner__tel-pic {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 1;
 }
 
 .profile-owner__contacts {
@@ -22,23 +50,11 @@
   margin-right: 70px;
 }
 
-input[type="email"],
-input[type="tel"] {
-  font-family: $main_font;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
-  padding: 12px 0 12px 0;
-  flex-grow: 1;
-}
-
 .profile-owner__text {
   font-size: 16px;
   line-height: 18px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
+
 
 @media (min-width: $tablet-width) {
   .profile-owner {
@@ -67,6 +83,12 @@ input[type="tel"] {
     line-height: 20px;
     padding: 12px 0 20px 0;
   }
+
+  .profile-owner__email-pic,
+  .profile-owner__tel-pic {
+    right: 15px;
+    top: 15px;
+}
 }
 
 @media (min-width: $desktop-width) {
@@ -87,5 +109,11 @@ input[type="tel"] {
     margin-top: 75px;
     display: flex;
     flex-direction: row;
+  }
+
+  .profile-owner__email-pic,
+  .profile-owner__tel-pic {
+    right: 15px;
+    top: 15px;
   }
 }

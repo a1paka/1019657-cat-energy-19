@@ -33,7 +33,7 @@
 @media (min-width: $tablet-width) {
   .present {
     padding: 0 30px 10px 30px;
-    margin-top: 10px;
+    margin-top: 70px;
   }
 
   .present__wrap {
@@ -54,13 +54,17 @@
     width: 167px;
     text-align: left;
   }
+
+  .present__img {
+    margin-left: 90px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .present {
     padding: 0;
     position: absolute;
-    top: 1585px;
+    top: 1525px;
     right: 40px;
   }
 

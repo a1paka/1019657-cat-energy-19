@@ -38,3 +38,9 @@ textarea {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@media (min-width: $desktop-width) {
+  html {
+    overflow-x: hidden;
+  }
+}
