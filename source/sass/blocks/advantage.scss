@@ -6,7 +6,8 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  margin-top: 15px;
+  margin: 15px 0 26px 0;
+  word-break: break-all;
 }
 
 .advantage__list {
@@ -60,7 +61,6 @@
   width: 100%;
 }
 
-
 @media (min-width: $tablet-width) {
   .advantage {
     padding: 0 30px;
@@ -70,7 +70,7 @@
     text-align: left;
     font-size: 60px;
     font-weight: 400;
-    margin-top: 43px;
+    margin: 47px 0 51px 0;
   }
 
   .advantage__container {
@@ -79,6 +79,7 @@
   }
 
   .advantage__item-pic {
+    position: relative;
     width: 80px;
     height: 80px;
   }
@@ -97,9 +98,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    width: 230px;
+    width: 245px;
     height: 230px;
-    margin: 5px 95px 83px 0;
+    margin: 4px 80px 83px 0;
 
     &--leaf::before {
       content: "1";
@@ -109,7 +110,7 @@
       line-height: 281px;
       font-weight: 400;
       opacity: 0.1;
-      left: 120px;
+      left: 118px;
       top: -40px;
     }
 
@@ -121,16 +122,8 @@
       line-height: 281px;
       font-weight: 400;
       opacity: 0.1;
-      left: 110px;
-      top: -40px;
-    }
-
-    &--dining {
-      margin-bottom: 0;
-    }
-
-    &--clock {
-      margin-bottom: 0;
+      left: 112px;
+      top: -38px;
     }
 
     &--dining::before {
@@ -141,7 +134,7 @@
       line-height: 281px;
       font-weight: 400;
       opacity: 0.1;
-      left: 110px;
+      left: 112px;
       top: -40px;
     }
 
@@ -153,18 +146,27 @@
       line-height: 281px;
       font-weight: 400;
       opacity: 0.1;
-      left: 110px;
+      left: 115px;
       top: -40px;
+    }
+
+    &--dining,
+    &--clock {
+      margin-bottom: 42px;
     }
   }
 
   .advantage__item-text {
-    margin-top: -12px;
+    position: relative;
+    top: -6px;
+    word-wrap: break-word;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage {
+    width: 1220px;
+    margin: 0 auto;
     padding: 0 40px;
   }
 
@@ -173,11 +175,11 @@
   }
 
   .advantage__item {
-    margin: 5px 0 0 0;
+    margin: 5px 0 24px 0;
   }
 
   .advantage__item-text {
-    margin-top: -15px;
+    margin-top: -5px;
   }
 
   .advantage__list {

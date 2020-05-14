@@ -1,0 +1,111 @@
+.example-radio__wrap {
+  margin-top: 24px;
+}
+
+.example-radio {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 0 0 25px 0;
+  margin: 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.example-radio__label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: 65px;
+  word-wrap: break-word;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.example-radio__input + .example-radio__label::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  background-clip: content-box;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  top: -7px;
+  left: -45px;
+  margin-bottom: 10px;
+}
+
+.example-radio__input:checked + .example-radio__label::after {
+  content: "";
+  position: absolute;
+  background-color: #68b738;
+  background-clip: content-box;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  top: 1.5px;
+  left: -36px;
+  margin-bottom: 10px;
+}
+
+.example-radio__input:disabled + .example-radio__label {
+  opacity: 0.5;
+}
+
+@media (min-width: $tablet-width) {
+  .example-radio__wrap {
+    display: block;
+    margin-top: 73px;
+    padding: 0 70px 0 70px;
+  }
+
+  .example-radio {
+    font-size: 20px;
+    line-height: 20px;
+    border: 1px solid #d9d9d9;
+    padding: 0;
+  }
+
+  .example-radio__label {
+    margin: 34px 0 33px 88px;
+  }
+
+  .example-radio__input + .example-radio__label::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: -60px;
+  }
+
+  .example-radio__input:checked + .example-radio__label::after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    top: 2px;
+    left: -48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-radio__wrap {
+    margin: 66px 0 0 0;
+    width: 570px;
+    padding: 0;
+  }
+
+  .example-radio__label {
+    margin: 33px 0 32px 88px;
+  }
+}
