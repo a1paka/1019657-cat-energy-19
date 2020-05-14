@@ -2,23 +2,19 @@
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  margin-top: 30px;
-  padding-left: 20px;
-  color: black;
+  display: inline-block;
+  color: #666666;
 
   &:active {
     opacity: 0.5;
   }
 }
 
-.copyright__link {
-  padding-right: 15px;
-}
-
 .copyright__link-img {
   position: relative;
-  top: 15px;
-  margin-left: 125px;
+  top: 16px;
+  left: 126px;
+  fill: #666666;
 
   &:hover {
     fill: #64b937;
@@ -27,10 +23,15 @@
 
 @media (min-width: $tablet-width) {
   .copyright__text {
-    margin-top: 20px;
+    margin-top: -9px;
+  }
+
+  .copyright__link {
+    margin-left: 9px;
   }
 
   .copyright__link-img {
-    margin-left: 5px;
+    margin-left: 10px;
+    left: 0;
   }
 }

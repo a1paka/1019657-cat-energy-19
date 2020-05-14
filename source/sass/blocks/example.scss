@@ -1,9 +1,10 @@
 .example {
+  margin-top: 32px;
   padding: 0 20px;
 }
 
 .example__container {
-  margin-top: 20px;
+  margin-bottom: 18px;
 }
 
 .example__container-slim,
@@ -17,8 +18,9 @@
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 400;
-  margin-left: 70px;
-  margin-bottom: 40px;
+  line-height: 37px;
+  margin: 15px 0 30px 70px;
+  word-break: break-all;
 }
 
 .example__item-describe {
@@ -79,6 +81,21 @@
   font-size: 16px;
   line-height: 16px;
   color: black;
+  cursor: pointer;
+
+  &:hover {
+    .example__link-arrow {
+      width: 25px;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+
+    .example__link-arrow {
+      width: 25px;
+    }
+  }
 }
 
 .example__item-link-block {
@@ -96,7 +113,7 @@
 
   .example__container-slim,
   .example__container-pro {
-    padding: 76px 0 62px 52px;
+    padding: 76px 0 61px 52px;
   }
 
   .example__item-title {
@@ -104,6 +121,7 @@
     line-height: 37px;
     font-weight: 400;
     margin: 0 0 25px 0;
+    width: 330px;
   }
 
   .example__item-describe {
@@ -111,6 +129,7 @@
     line-height: 24px;
     margin-bottom: 33px;
     border: none;
+    word-wrap: break-word;
 
     &--slim {
       width: 380px;
@@ -127,8 +146,18 @@
     font-weight: 400;
   }
 
+  .example__item-link-block {
+    padding: 0;
+  }
+
+  .example__link-arrow {
+    position: relative;
+    margin-left: 25px;
+    top: -4px;
+  }
+
   .example__container {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   .example__container-slim::after {
@@ -165,16 +194,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0;
+    margin: 0 auto;
+    width: 1220px;
+  }
+
+  .example__container {
+    margin-bottom: 27px;
+    margin-right: 78px;
+    flex: 0 0 auto;
   }
 
   .example__container-slim,
   .example__container-pro {
-    padding: 76px 55px 61px 55px;
+    padding: 76px 29px 62px 50px;
   }
 
   .example__item-describe {
-    margin-top: 75px;
+    margin: 73px 0 10px 3px;
 
     &--slim {
       width: 465px;
@@ -186,8 +223,7 @@
   }
 
   .example__item-link-block {
-    padding: 0;
-    margin-top: -5px;
+    padding: 0 0 0 3px;
   }
 
   .example__item-title {
@@ -197,28 +233,28 @@
   .example__container-slim::after {
     width: 70px;
     height: 95px;
-    top: 50px;
-    left: 100px;
+    top: 42px;
+    left: 66px;
   }
 
   .example__container-slim::before {
     width: 100px;
     height: 100px;
-    top: 50px;
-    left: 80px;
+    top: 45px;
+    left: 50px;
   }
 
   .example__container-pro::after {
     width: 136px;
     height: 56px;
     top: 70px;
-    left: 50px;
+    left: 35px;
   }
 
   .example__container-pro::before {
     width: 100px;
     height: 100px;
-    top: 50px;
-    left: 80px;
+    top: 45px;
+    left: 55px;
   }
 }

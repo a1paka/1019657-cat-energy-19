@@ -1,38 +1,42 @@
 .present {
   text-align: center;
-  padding: 0 20px;
-  margin-top: 53px;
+  margin-top: 40px;
 }
 
 .present__wrap {
+  position: relative;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-color: #72b649;
-  width: 280px;
+  background-size: 100%;
   height: 290px;
-  position: relative;
 }
 
-.present__img {
+.present__img-icon {
+  display: block;
   position: absolute;
-  margin-top: 65px;
-  margin-left: 110px;
+  text-align: center;
+  fill: white;
+  top: 65px;
+  right: 113px;
 }
 
 .present__text {
+  display: inline-block;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: white;
-  padding-top: 185px;
+  width: 165px;
+  padding-top: 170px;
   padding-bottom: 60px;
-  margin-left: 60px;
-  margin-right: 60px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .present {
-    padding: 0 30px 10px 30px;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-top: 70px;
   }
 
@@ -55,17 +59,18 @@
     text-align: left;
   }
 
-  .present__img {
-    margin-left: 90px;
+  .present__img-icon {
+    position: absolute;
+    fill: white;
+    top: 65px;
+    left: 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .present {
     padding: 0;
-    position: absolute;
-    top: 1525px;
-    right: 40px;
+    margin: 0 0 0 80px;
   }
 
   .present__wrap {
@@ -73,8 +78,8 @@
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-color: #72b649;
-    width: 250px;
-    height: 290px;
+    width: 245px;
+    height: 285px;
   }
 
   .present__text {
@@ -83,9 +88,10 @@
     margin: 185px  0 0 30px;
   }
 
-  .present__img {
+  .present__img-icon {
     position: absolute;
-    margin-top: 65px;
-    margin-left: 90px;
+    fill: white;
+    top: 65px;
+    left: 95px;
   }
 }
