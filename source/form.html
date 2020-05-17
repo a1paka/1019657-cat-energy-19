@@ -6,13 +6,12 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="./css/style.min.css" rel="stylesheet">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ab218f40-5aad-4848-acca-ef30981df67c&lang=ru_RU" type="text/javascript"></script>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ab218f40-5aad-4848-acca-ef30981df67c&lang=ru_RU"></script>
 </head>
 
 <body>
-  <div class="visually-hidden">
-    <include src="build/img/sprite.svg"></include>
-  </div>
 
   <header class="page-header">
     <div class="page-header__menu">
@@ -153,7 +152,7 @@
         </div>
       </section>
     </div>
-    <div class="page-footer__map" id="map" width="600px" height:="400px"></div>
+    <div class="page-footer__map" id="map"></div>
     <div class="page-footer__wrapper">
       <div class="page-footer__social-wrap">
         <a class="page-footer__logo-link">
