@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 35px;
+  margin-top: 33px;
   padding: 0 20px 10px 20px;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .page-footer__logo {
-  margin: 35px 0 0 78px;
+  margin: 38px 0 0 76px;
   padding-bottom: 31px;
 }
 
@@ -189,7 +189,9 @@
   }
 
   .page-footer__copyright {
-    width: 170px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
   }
 
   .page-footer__map-frame {
@@ -224,7 +226,7 @@
   }
 
   .page-footer__copyright {
-    margin-top: 7px;
+    margin-top: -3px;
   }
 
   .page-footer__partnership-wrap {

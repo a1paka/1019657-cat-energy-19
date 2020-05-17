@@ -6,6 +6,7 @@
 
 .page-header__logo-link {
   margin-top: 12px;
+  margin-bottom: -13px;
   padding: 0 20px;
   cursor: pointer;
 
@@ -30,12 +31,13 @@
   }
 
   .page-header__logo-image {
-    margin-top: 10px;
+    width: 192px;
+    margin-top: 12px;
   }
 
   .page-header__logo-link {
     padding: 0;
-    margin-right: 84px;
+    margin-bottom: 0;
   }
 
   .page-header__menu {
@@ -57,6 +59,7 @@
       background-size: 750px auto;
       background-repeat: no-repeat;
       background-position-x: right;
+      background-color: #64a83b;
       width: 50%;
       height: 695px;
       top: 0;
@@ -71,5 +74,10 @@
     padding: 0;
     width: 1220px;
     margin: 0 auto;
+  }
+
+  .page-header__logo-image {
+    width: 201px;
+    margin-top: 10px;
   }
 }
