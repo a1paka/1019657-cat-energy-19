@@ -1,34 +1,47 @@
 .example {
+  position: relative;
   margin-top: 32px;
   padding: 0 20px;
-}
-
-.example__container {
-  margin-bottom: 18px;
 }
 
 .example__container-slim,
 .example__container-pro {
   background-color: $example_bg_color;
   padding: 15px 20px 22px 20px;
+  margin: 0;
   position: relative;
 }
 
+.example__container-slim {
+  position: relative;
+  margin-bottom: 21px;
+}
+
+.example__container-pro {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .example__item-title {
+  position: relative;
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
-  margin: 15px 0 30px 70px;
+  margin: 15px 0 30px 72px;
   word-break: break-all;
 }
 
 .example__item-describe {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
   padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
+  margin: 0;
 }
 
 .example__container-slim::after {
@@ -75,6 +88,10 @@
   left: 20px;
 }
 
+.example__item-link-block {
+  margin-top: 15px;
+}
+
 .example__link {
   text-transform: uppercase;
   text-decoration: none;
@@ -82,6 +99,7 @@
   line-height: 16px;
   color: black;
   cursor: pointer;
+  vertical-align: middle;
 
   &:hover {
     .example__link-arrow {
@@ -98,12 +116,10 @@
   }
 }
 
-.example__item-link-block {
-  padding-top: 3px;
-}
-
 .example__link-arrow {
   margin-left: 10px;
+  vertical-align: top;
+  margin-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -147,17 +163,23 @@
   }
 
   .example__item-link-block {
+    margin: 0;
     padding: 0;
   }
 
   .example__link-arrow {
     position: relative;
     margin-left: 25px;
-    top: -4px;
+    vertical-align: top;
   }
 
   .example__container {
-    margin-bottom: 31px;
+    margin-bottom: 20px;
+  }
+
+  .example__container-slim {
+    position: relative;
+    margin-bottom: 30px;
   }
 
   .example__container-slim::after {
@@ -207,11 +229,11 @@
 
   .example__container-slim,
   .example__container-pro {
-    padding: 76px 29px 62px 50px;
+    padding: 76px 29px 60px 50px;
   }
 
   .example__item-describe {
-    margin: 73px 0 10px 3px;
+    margin: 48px 0 10px 3px;
 
     &--slim {
       width: 465px;
